@@ -25,7 +25,7 @@ class TaskTests: XCTestCase {
     
     func testSetup() {
         let tasks = try! Realm().objects(Task.self)
-        XCTAssertNotNil(tasks.count == 1)
+        XCTAssertEqual(tasks.count, 1)
     }
     
 }
